@@ -2,7 +2,7 @@
 
 Production-oriented Railway template for [Twenty](https://github.com/twentyhq/twenty), the open-source CRM designed for AI.
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/twenty-crm?referralCode=ZqgrJ0)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/twenty-crm-v2-railway?referralCode=ZqgrJ0)
 
 The template pins Twenty `v2.24.0` and deploys:
 
