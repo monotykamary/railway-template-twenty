@@ -4,7 +4,7 @@ Twenty is a modern open-source CRM for managing companies, contacts, opportuniti
 
 ## About Hosting Twenty CRM
 
-This template runs Twenty `v2.24.0` as a production-style stack: a public server, a dedicated background worker, PostgreSQL 16, authenticated Redis with `noeviction`, and a Railway object-storage bucket. The server performs database migrations and cron registration. The worker handles asynchronous imports, email synchronization, and workflow execution.
+This template runs Twenty `v2.26.0` as a production-style stack: a public server, a dedicated background worker, PostgreSQL 16, authenticated Redis with `noeviction`, and a Railway object-storage bucket. The server performs database migrations and cron registration. The worker handles asynchronous imports, email synchronization, and workflow execution.
 
 Attachments use Twenty's S3 driver because Railway services cannot share one filesystem volume. PostgreSQL and Redis each retain their own data on persistent volumes. Encryption and legacy application secrets are generated once and shared automatically between the server and worker.
 
@@ -31,7 +31,7 @@ Attachments use Twenty's S3 driver because Railway services cannot share one fil
 
 ### Implementation Details
 
-Open the `server` service domain after deployment and create the first workspace. The template pins server and worker to the same `v2.24.0` image. `SERVER_URL`, PostgreSQL, Redis, object-storage credentials, `APP_SECRET`, and `ENCRYPTION_KEY` are wired across services automatically. Do not rotate encryption variables without following Twenty's key-rotation procedure.
+Open the `server` service domain after deployment and create the first workspace. The template pins server and worker to the same `v2.26.0` image. `SERVER_URL`, PostgreSQL, Redis, object-storage credentials, `APP_SECRET`, and `ENCRYPTION_KEY` are wired across services automatically. Do not rotate encryption variables without following Twenty's key-rotation procedure.
 
 ### Why Deploy Twenty CRM on Railway?
 
