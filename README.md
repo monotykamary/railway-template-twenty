@@ -4,7 +4,7 @@ Production-oriented Railway template for [Twenty](https://github.com/twentyhq/tw
 
 [![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/twenty-crm-v2-railway?referralCode=ZqgrJ0)
 
-The template pins Twenty `v2.26.0` and deploys:
+The template pins Twenty `v2.27.0` and deploys:
 
 - Twenty server with `/healthz`
 - Dedicated Twenty worker that waits for server migrations before consuming queues
@@ -21,5 +21,5 @@ Update both `server/Dockerfile` and `worker/Dockerfile` to the same upstream Twe
 ## Source
 
 - [Twenty self-hosting documentation](https://twenty.com/developers/section/self-hosting)
-- [Twenty v2.26.0](https://github.com/twentyhq/twenty/releases/tag/twenty%2Fv2.26.0)
+- [Twenty v2.27.0](https://github.com/twentyhq/twenty/releases/tag/twenty%2Fv2.27.0)
 - [Twenty license](https://github.com/twentyhq/twenty/blob/main/LICENSE)
