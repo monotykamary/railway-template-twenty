@@ -6,7 +6,7 @@ Production-oriented Railway template for [Twenty](https://github.com/twentyhq/tw
 
 The template pins Twenty `v2.30.0` and deploys:
 
-- Twenty server with `/healthz`
+- Twenty server that waits for PostgreSQL before migrations and exposes `/healthz`
 - Dedicated Twenty worker that waits for server migrations before consuming queues
 - PostgreSQL 16 with a persistent volume
 - Redis with authentication, AOF persistence, and `noeviction`

@@ -4,7 +4,7 @@ Twenty is a modern open-source CRM for managing companies, contacts, opportuniti
 
 ## About Hosting Twenty CRM
 
-This template runs Twenty `v2.30.0` as a production-style stack: a public server, a dedicated background worker, PostgreSQL 16, authenticated Redis with `noeviction`, and a Railway object-storage bucket. The server performs database migrations and cron registration. The worker waits for server readiness before handling asynchronous imports, email synchronization, and workflow execution.
+This template runs Twenty `v2.30.0` as a production-style stack: a public server, a dedicated background worker, PostgreSQL 16, authenticated Redis with `noeviction`, and a Railway object-storage bucket. The server waits for PostgreSQL before performing database migrations and cron registration. The worker waits for server readiness before handling asynchronous imports, email synchronization, and workflow execution.
 
 Attachments use Twenty's S3 driver because Railway services cannot share one filesystem volume. PostgreSQL and Redis each retain their own data on persistent volumes. Encryption and legacy application secrets are generated once and shared automatically between the server and worker.
 
@@ -35,4 +35,4 @@ Open the `server` service domain after deployment and create the first workspace
 
 ### Why Deploy Twenty CRM on Railway?
 
-Railway provides HTTPS, private service networking, managed deployment ordering, persistent database volumes, object storage, health checks, and centralized logs for the full Twenty stack.
+Railway provides HTTPS, private service networking, persistent database volumes, object storage, health checks, and centralized logs for the full Twenty stack. The source adapters handle startup ordering between PostgreSQL, the server, and the worker.
