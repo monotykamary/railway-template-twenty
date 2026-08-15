@@ -5,3 +5,4 @@ COPY start.sh /usr/local/bin/start-twenty-server
 RUN chmod 0755 /usr/local/bin/start-twenty-server
 USER 1000
 ENTRYPOINT ["/usr/local/bin/start-twenty-server"]
+CMD ["node", "dist/main"]
