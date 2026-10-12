@@ -1,4 +1,4 @@
-FROM docker.io/twentycrm/twenty:v2.44.0@sha256:01fb6d2c00397976fd7613dbeb9703b514b52fb6270339b7a326a2a975d15b26
+FROM docker.io/twentycrm/twenty:v2.46.0@sha256:bb4e94f0215cbd14c7356b0324d9b7ac10ccd077042cd6d5058ad02ef2080605
 
 USER root
 COPY start.sh /usr/local/bin/start-twenty-server
