@@ -1,4 +1,4 @@
-FROM docker.io/twentycrm/twenty:v2.48.0@sha256:43fab4bffacdcd63ff3c9257b7f8985a4424d81e9eb43982b9c16a841d555e52
+FROM docker.io/twentycrm/twenty:v2.51.0@sha256:91793759486e63768b28cc7bebe6c06d73f5a604cdb8cc7d7b54f862542714be
 USER root
 COPY start.sh /usr/local/bin/start-twenty-worker
 RUN chmod 0755 /usr/local/bin/start-twenty-worker
